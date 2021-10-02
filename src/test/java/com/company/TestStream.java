@@ -32,12 +32,12 @@ class TestStream {
         int[] inputArray = initRandomIntegerArray(size);
         int[] expected = Arrays.stream(inputArray).sorted().toArray();
         long startTime = System.nanoTime();
-        int[] forJoinResult = FORKJOINSTREAM.getForkJoinMergeSortArray(inputArray);
+        int[] forkJoinResult = FORKJOINSTREAM.getForkJoinMergeSortArray(inputArray);
         long finishTime = System.nanoTime();
         double seconds = countSeconds(startTime, finishTime);
         System.out.println("Time for multithreading merge sort for " + size + " elements is " + seconds + " sec.");
 
-        Assertions.assertArrayEquals(expected, forJoinResult);
+        Assertions.assertArrayEquals(expected, forkJoinResult);
 
     }
 
