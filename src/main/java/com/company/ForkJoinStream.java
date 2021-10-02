@@ -2,6 +2,9 @@ package com.company;
 
 import java.util.concurrent.ForkJoinPool;
 
+import com.company.algorithm.ForkJoinMergeSort;
+import com.company.algorithm.MergeSort;
+
 public class ForkJoinStream {
 
     public static final int START_ARRAYS_INDEX = 0;

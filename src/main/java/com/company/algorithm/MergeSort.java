@@ -1,6 +1,9 @@
-package com.company;
+package com.company.algorithm;
 
 public class MergeSort {
+
+    private MergeSort() {
+    }
 
     public static void mergeSort(int[] inputArray) {
         int length = inputArray.length;
